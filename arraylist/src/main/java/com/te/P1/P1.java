@@ -8,6 +8,8 @@ public static <E> void main(String[] args) {
 	a1.add("Harshad");
 	a1.add("Siddhu");
 	a1.add("Adwait");
+	a1.forEach(i -> System.out.println(i));
+	System.out.println("================");
 	System.out.println(a1.get(0));
 	System.out.println(a1.get(1));
 	System.out.println(a1.get(2));
@@ -19,7 +21,7 @@ public static <E> void main(String[] args) {
 	System.out.println(a1.get(1));
 	System.out.println(a1.get(2));
 	if (a1.contains("Harshad")) { //contains are used for the the given elements is present are not. 
-		System.out.println("It is presenr");
+		System.out.println("It is present");
 	} else {
 		System.out.println("It is not Present");
 	}

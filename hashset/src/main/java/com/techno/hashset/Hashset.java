@@ -10,6 +10,7 @@ public static void main(String[] args) {
 	hashset.add(20);
 	hashset.add(30);
 	hashset.add(40);
+	hashset.add(20);
 	for(int x:hashset)
 	{
 		System.out.println(x);

@@ -19,7 +19,7 @@ public class Demo {
 		System.out.println(c);
 		c.add(null);
 		System.out.println(c);
-		Iterator iterator = c.iterator();
+		//Iterator iterator = c.iterator();
 		ArrayList list = new ArrayList();
 		list.add(20);
 		System.out.println(list);
@@ -34,5 +34,6 @@ public class Demo {
 		System.out.println(c.size());
 		System.out.println("The list Container =" + list.isEmpty());
 		System.out.println("The c container " + c.isEmpty());
+		
 	}
 }

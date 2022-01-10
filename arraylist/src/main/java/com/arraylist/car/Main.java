@@ -1,6 +1,7 @@
 package com.arraylist.car;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Main {
 public static void main(String[] args) {
@@ -11,8 +12,10 @@ public static void main(String[] args) {
 	a1.add(c1);
 	a1.add(c2);
 	a1.add(c3);
-	for (Car i : a1) {
-		System.out.println(i.brand+" "+i.name+" "+i.price+" ");
+	ListIterator<Car> listIterator = a1.listIterator();
+	while (listIterator.hasNext()) {
+		System.out.println(listIterator.next());
 	}
+
 }
 }

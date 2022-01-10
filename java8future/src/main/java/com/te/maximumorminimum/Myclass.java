@@ -24,6 +24,8 @@ public class Myclass {
 		collect1.forEach(System.out::println);
 		List<Employee> collect2 = asList.stream().sorted(Comparator.comparing(Employee::getAge)).collect(Collectors.toList());
 		collect2.forEach(System.out::println);
+		System.out.println("==111111111111111111111111111111111111111111111111111111111111111");
+		asList.stream().sorted(Comparator.comparing(Employee::getAge)).collect(Collectors.toList()).forEach(System.out::println);
 		System.out.println("==================================================================");
 		Map<String, List<Employee>> collect3 = asList.stream().collect(Collectors.groupingBy(Employee::getDesignation));
 //		collect3.forEach(department,emp)->
@@ -31,9 +33,11 @@ public class Myclass {
 //			System.out.println(department);
 //			emp.forEach
 //		};
+		
 		System.out.println("===============================================================");
 		System.out.println("age above 40");
 		asList.stream().filter(em->em.getAge()>40).collect(Collectors.toList()).forEach(System.out::println);
+		asList.stream().filter(em->em.getAge()>45).collect(Collectors.toList()).forEach(System.out::println);
 		System.out.println("=================================================================");
 		System.out.println("Maximum salary collect");
 		asList.stream().filter(em->em.getSalary()>30000).collect(Collectors.toList()).forEach(System.out::println);
@@ -41,6 +45,9 @@ public class Myclass {
 		System.out.println("the all employess age are above avrage or not if yes then true or false");
 		boolean anyMatch = asList.stream().anyMatch(em->em.getAge()>40);
 		System.out.println(anyMatch);
+		asList.stream().sorted(Comparator.comparing(Employee::getSalary)).collect(Collectors.toList()).forEach(System.out::println);
+		asList.stream().filter(em->em.getAge()>50).collect(Collectors.toList()).forEach(System.out::println);
+		asList.stream().min(Comparator.comparing(Employee::getAge)).ifPresent(System.out::println);
 	}
 
 }

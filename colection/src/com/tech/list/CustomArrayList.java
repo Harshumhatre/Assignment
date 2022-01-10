@@ -27,7 +27,7 @@ public class CustomArrayList {
 	}
 
 	public void remove(int index) {
-		for (int i = index; i < position; i++) {
+		for (int i = index; i <= position; i++) {
 			array[i] = array[i + 1];
 		}
 		position--;

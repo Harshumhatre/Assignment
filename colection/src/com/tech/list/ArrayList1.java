@@ -7,7 +7,7 @@ import java.util.Iterator;
 
 public class ArrayList1 {
 public static void main(String[] args) {
-	ArrayList arrayList = new ArrayList();//<E>generics= it is used for what kind of object we are stored in that.
+	ArrayList arrayList = new ArrayList(2);//<E>generics= it is used for what kind of object we are stored in that.
 	arrayList.add("rahul");        
 	arrayList.add("Harshad");
 	arrayList.add("Hemanth");
@@ -17,8 +17,8 @@ public static void main(String[] args) {
 //	Collections.sort(arrayList);
 //	System.out.println(arrayList);
 //	Collections.reverse(arrayList);
-//	System.out.println(arrayList);
-//	arrayList.remove(0);
+	System.out.println(arrayList);
+	arrayList.remove(0);
 //	System.out.println(arrayList);
 //	System.out.println("+=====================");
 //	//arrayList.remove(3);
@@ -28,7 +28,7 @@ public static void main(String[] args) {
 ////	arrayList.removeAll(arrayList);
 ////	System.out.println(arrayList);
 ////	System.out.println(arrayList);
-Iterator iterator = arrayList.iterator();
+	Iterator iterator = arrayList.iterator();
 	while (iterator.hasNext()) {
 		System.out.println(iterator.next());
 	}

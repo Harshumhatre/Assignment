@@ -16,7 +16,7 @@ public static void main(String[] args) {
 	Statement statement=null;
 	try {
 		
-		connection	=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdemo","root","Har@1234");
+		connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbcdemo","root","Har@1234");
 		statement = connection.createStatement();
 		ResultSet result = statement.executeQuery("Select * from Sweet");
 		

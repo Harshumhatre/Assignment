@@ -4,23 +4,22 @@ public class Employee implements Comparable<Employee>  {
 	int empid;
 	String name;
 	double salary;
-	public Employee(int empid,String name,double salary)
-	{
-	super();
-	if(empid>0)
-	{
-	this.empid=empid;
+	public Employee(int empid, String name, double salary) {
+		super();
+		this.empid = empid;
+		this.name = name;
+		this.salary = salary;
 	}
-	this.name=name;
-	this.salary=salary;
-	}
+	
 	@Override
 	public String toString() {
 		return "Employee [empid=" + empid + ", name=" + name + ", salary=" + salary + "]";
 	}
-	public int compareTo(Employee o)
-	{
-		return this.empid-o.empid;
+
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return empid-o.empid;
 	}
 	
 	
